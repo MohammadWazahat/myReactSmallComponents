@@ -1,0 +1,16 @@
+.good {
+    background: #68cf28;
+}
+.bad {
+    background: #e91b1b;
+}
+
+.lightTheme{
+    background: #ffe0e0;
+    
+}
+
+.darkTheme{
+    background: #340000;
+    color:rgb(101, 171, 251);
+}
