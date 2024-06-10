@@ -4,6 +4,7 @@ import "./AllComponents.css"
 import ToggleButtonCss from './toggleButtonCss.jsx/ToggleButtonCss'
 import { counterContext } from '../context/context'
 import TestUseReducer from './testReducer/TestUseReducer'
+import RenderJson from './04renderingJsonData/RenderJson'
 
 
 const AllComponents = () => {
@@ -21,6 +22,7 @@ const changeInnerText = () =>{
       <ToggleTheme/>
       <ToggleButtonCss/>
       <TestUseReducer/>
+      <RenderJson/>
   
     </div>
     </counterContext.Provider>
