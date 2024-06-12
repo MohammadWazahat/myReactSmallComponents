@@ -9,9 +9,9 @@ const RenderJson = () => {
   return (
     <div>
       <div>i m render json</div>
-      <div className="grid grid-cols-4 gap-4 ">
+      <div className="grid grid-cols-3 gap-6 mx-32">
         {Data.map((item) => {
-          return <SingleProduct key={ item.id } { ...item } />;
+          return <SingleProduct key={ item.id } { ...item } />
         })}
        
       </div>
