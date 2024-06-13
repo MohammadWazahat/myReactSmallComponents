@@ -10,6 +10,7 @@ import StarRating from "./07StarRating/StarRating";
 import ColorPicker from "./08ColorPicker/ColorPicker";
 import AddToCart from "./09AddToCart/AddToCart";
 import ChangeButtonColor from "./10ButtonColor/ChangeButtonColor";
+import ToggleGridNList from "./11GridAndListView/ToggleGridNList";
 
 const AllComponents = () => {
   const [count, setCount] = useState("hello g");
@@ -24,14 +25,15 @@ const AllComponents = () => {
         <div>
           hi i m all components
           {/* <ToggleTheme/> */}
-          <ToggleButtonCss/>
+          {/* <ToggleButtonCss/> */}
           {/* <TestUseReducer/> */}
           {/* <RenderJson/> */}
-          <DynamicData />
-          <StarRating />
-          <ColorPicker/>
-          <AddToCart/>
-          <ChangeButtonColor/>
+          {/* <DynamicData /> */}
+          {/* <StarRating /> */}
+          {/* <ColorPicker/> */}
+          {/* <AddToCart/> */}
+          {/* <ChangeButtonColor/> */}
+          <ToggleGridNList/>
         </div>
       </counterContext.Provider>
     </>
