@@ -12,6 +12,8 @@ import AddToCart from "./09AddToCart/AddToCart";
 import ChangeButtonColor from "./10ButtonColor/ChangeButtonColor";
 import ToggleGridNList from "./11GridAndListView/ToggleGridNList";
 import SortingData from "./12SortingData/SortingData";
+import FilterData from "./13FilterData/FilterData";
+import SearchFilterData from "./13FilterData/SearchFilterData";
 
 const AllComponents = () => {
   const [count, setCount] = useState("hello g");
@@ -35,7 +37,9 @@ const AllComponents = () => {
           {/* <AddToCart/> */}
           {/* <ChangeButtonColor/> */}
           {/* <ToggleGridNList/> */}
-          <SortingData/>
+          {/* <SortingData/> */}
+          {/* <FilterData/> */}
+          <SearchFilterData/>
         </div>
       </counterContext.Provider>
     </>
