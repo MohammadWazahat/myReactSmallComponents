@@ -11,6 +11,7 @@ import ColorPicker from "./08ColorPicker/ColorPicker";
 import AddToCart from "./09AddToCart/AddToCart";
 import ChangeButtonColor from "./10ButtonColor/ChangeButtonColor";
 import ToggleGridNList from "./11GridAndListView/ToggleGridNList";
+import SortingData from "./12SortingData/SortingData";
 
 const AllComponents = () => {
   const [count, setCount] = useState("hello g");
@@ -33,7 +34,8 @@ const AllComponents = () => {
           {/* <ColorPicker/> */}
           {/* <AddToCart/> */}
           {/* <ChangeButtonColor/> */}
-          <ToggleGridNList/>
+          {/* <ToggleGridNList/> */}
+          <SortingData/>
         </div>
       </counterContext.Provider>
     </>
