@@ -24,6 +24,7 @@ import DynamicTabReducer from "./06DynamicData/DynamicTabReducer";
 import AddingCartReducer from "./09AddToCart/AddingCartReducer";
 import SortingDataReducer from "./12SortingData/SortingDataReducer";
 import FilterDataReducer from "./13FilterData/FilterDataReducer";
+import SearchFilterReducer from "./13FilterData/SearchFilterReducer";
 
 const AllComponents = () => {
   const [count, setCount] = useState("hello g");
@@ -59,7 +60,8 @@ const AllComponents = () => {
           {/* <DynamicTabReducer/> */}
           {/* <AddingCartReducer/> */}
           {/* <SortingDataReducer/> */}
-          <FilterDataReducer/>
+          {/* <FilterDataReducer/> */}
+          <SearchFilterReducer/>
         </div>
       </counterContext.Provider>
     </>
