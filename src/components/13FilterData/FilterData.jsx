@@ -14,11 +14,6 @@ const FilterData = () => {
     setData(Data);
   };
 
-//   useEffect(()=>{
-// setData(data)
-//   },[data])
-
-
   // to sort an array
   //   const name = ["poonam" , "pooja" , "poornima" ];
   //   console.log(ages)

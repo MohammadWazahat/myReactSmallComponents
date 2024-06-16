@@ -14,6 +14,10 @@ import ToggleGridNList from "./11GridAndListView/ToggleGridNList";
 import SortingData from "./12SortingData/SortingData";
 import FilterData from "./13FilterData/FilterData";
 import SearchFilterData from "./13FilterData/SearchFilterData";
+import FilterByColor from "./13FilterData/FilterByColor";
+import MergingAnArray from "./13FilterData/MergingAnArray";
+import AddingToCart from "./14Cart/AddingToCart";
+import CounterReducer from "./15CounterUseReducer/CounterReducer";
 
 const AllComponents = () => {
   const [count, setCount] = useState("hello g");
@@ -39,7 +43,11 @@ const AllComponents = () => {
           {/* <ToggleGridNList/> */}
           {/* <SortingData/> */}
           {/* <FilterData/> */}
-          <SearchFilterData/>
+          {/* <SearchFilterData/> */}
+          {/* <FilterByColor/> */}
+          {/* <MergingAnArray/> */}
+          {/* <AddingToCart/> */}
+          <CounterReducer/>
         </div>
       </counterContext.Provider>
     </>
