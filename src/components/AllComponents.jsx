@@ -25,6 +25,7 @@ import AddingCartReducer from "./09AddToCart/AddingCartReducer";
 import SortingDataReducer from "./12SortingData/SortingDataReducer";
 import FilterDataReducer from "./13FilterData/FilterDataReducer";
 import SearchFilterReducer from "./13FilterData/SearchFilterReducer";
+import AddToCartReducer from "./14Cart/AddToCartReducer";
 
 const AllComponents = () => {
   const [count, setCount] = useState("hello g");
@@ -61,7 +62,8 @@ const AllComponents = () => {
           {/* <AddingCartReducer/> */}
           {/* <SortingDataReducer/> */}
           {/* <FilterDataReducer/> */}
-          <SearchFilterReducer/>
+          {/* <SearchFilterReducer/> */}
+          <AddToCartReducer/>
         </div>
       </counterContext.Provider>
     </>
