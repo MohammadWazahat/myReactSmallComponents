@@ -18,6 +18,10 @@ import FilterByColor from "./13FilterData/FilterByColor";
 import MergingAnArray from "./13FilterData/MergingAnArray";
 import AddingToCart from "./14Cart/AddingToCart";
 import CounterReducer from "./15CounterUseReducer/CounterReducer";
+import ToggleThemeReducer from "./toggleTheme/ToggleThemeReducer";
+import NewTestReducer from "./testReducer/NewTestReducer";
+import DynamicTabReducer from "./06DynamicData/DynamicTabReducer";
+import AddingCartReducer from "./09AddToCart/AddingCartReducer";
 
 const AllComponents = () => {
   const [count, setCount] = useState("hello g");
@@ -47,7 +51,11 @@ const AllComponents = () => {
           {/* <FilterByColor/> */}
           {/* <MergingAnArray/> */}
           {/* <AddingToCart/> */}
-          <CounterReducer/>
+          {/* <CounterReducer/> */}
+          {/* <ToggleThemeReducer/> */}
+          {/* <NewTestReducer/> */}
+          {/* <DynamicTabReducer/> */}
+          <AddingCartReducer/>
         </div>
       </counterContext.Provider>
     </>

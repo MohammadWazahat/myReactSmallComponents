@@ -1,16 +1,24 @@
 .good {
-    background: #68cf28;
+  background: #68cf28;
 }
 .bad {
-    background: #e91b1b;
+  background: #e91b1b;
 }
 
-.lightTheme{
-    background: #ffe0e0;
-    
+.lightTheme {
+  background: #ffe0e0;
 }
 
-.darkTheme{
-    background: #340000;
-    color:rgb(101, 171, 251);
+.darkTheme {
+  background: #340000;
+  color: rgb(101, 171, 251);
+}
+
+.lightButton {
+  background: #f0ffea;
+}
+
+.darkButton {
+  background: #340000;
+  color: rgb(101, 171, 251);
 }
