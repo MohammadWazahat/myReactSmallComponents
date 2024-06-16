@@ -22,6 +22,7 @@ import ToggleThemeReducer from "./toggleTheme/ToggleThemeReducer";
 import NewTestReducer from "./testReducer/NewTestReducer";
 import DynamicTabReducer from "./06DynamicData/DynamicTabReducer";
 import AddingCartReducer from "./09AddToCart/AddingCartReducer";
+import SortingDataReducer from "./12SortingData/SortingDataReducer";
 
 const AllComponents = () => {
   const [count, setCount] = useState("hello g");
@@ -55,7 +56,8 @@ const AllComponents = () => {
           {/* <ToggleThemeReducer/> */}
           {/* <NewTestReducer/> */}
           {/* <DynamicTabReducer/> */}
-          <AddingCartReducer/>
+          {/* <AddingCartReducer/> */}
+          <SortingDataReducer/>
         </div>
       </counterContext.Provider>
     </>
