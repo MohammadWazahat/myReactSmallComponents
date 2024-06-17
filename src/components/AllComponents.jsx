@@ -30,6 +30,7 @@ import SortDataDividedFile from "./16SortDividedInFile/SortDataDividedFile";
 import ParentComponent from "./16SortDividedInFile/ParentComponent";
 import FilterMyData from "./13FilterData/FilterData/FilterMyData";
 import FilterDataParent from "./13FilterData/FilterData/FilterDataParent";
+import ToggleReducer from "./11GridAndListView/ToggleReducer";
 
 
 
@@ -72,7 +73,8 @@ const AllComponents = () => {
           {/* <AddToCartReducer/> */}
           {/* <SortDataDividedFile/> */}
          {/* <ParentComponent/> */}
-         <FilterDataParent/>
+         {/* <FilterDataParent/> */}
+         <ToggleReducer/>
         </div>
       </counterContext.Provider>
     </>
