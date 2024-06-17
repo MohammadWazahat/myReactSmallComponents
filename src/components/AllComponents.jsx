@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import ToggleTheme from "./toggleTheme/ToggleTheme";
 import "./AllComponents.css";
-import ToggleButtonCss from "./toggleButtonCss.jsx/ToggleButtonCss";
 import { counterContext } from "../context/context";
+import ToggleTheme from "./toggleTheme/ToggleTheme";
+import ToggleButtonCss from "./toggleButtonCss.jsx/ToggleButtonCss";
 import TestUseReducer from "./testReducer/TestUseReducer";
 import RenderJson from "./04renderingJsonData/RenderJson";
 import DynamicData from "./06DynamicData/DynamicData";
@@ -26,6 +26,12 @@ import SortingDataReducer from "./12SortingData/SortingDataReducer";
 import FilterDataReducer from "./13FilterData/FilterDataReducer";
 import SearchFilterReducer from "./13FilterData/SearchFilterReducer";
 import AddToCartReducer from "./14Cart/AddToCartReducer";
+import SortDataDividedFile from "./16SortDividedInFile/SortDataDividedFile";
+import ParentComponent from "./16SortDividedInFile/ParentComponent";
+import FilterMyData from "./13FilterData/FilterData/FilterMyData";
+import FilterDataParent from "./13FilterData/FilterData/FilterDataParent";
+
+
 
 const AllComponents = () => {
   const [count, setCount] = useState("hello g");
@@ -63,7 +69,10 @@ const AllComponents = () => {
           {/* <SortingDataReducer/> */}
           {/* <FilterDataReducer/> */}
           {/* <SearchFilterReducer/> */}
-          <AddToCartReducer/>
+          {/* <AddToCartReducer/> */}
+          {/* <SortDataDividedFile/> */}
+         {/* <ParentComponent/> */}
+         <FilterDataParent/>
         </div>
       </counterContext.Provider>
     </>
