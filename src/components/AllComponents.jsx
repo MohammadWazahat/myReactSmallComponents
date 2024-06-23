@@ -31,8 +31,8 @@ import ParentComponent from "./16SortDividedInFile/ParentComponent";
 import FilterMyData from "./13FilterData/FilterData/FilterMyData";
 import FilterDataParent from "./13FilterData/FilterData/FilterDataParent";
 import ToggleReducer from "./11GridAndListView/ToggleReducer";
-
-
+import FormTesting from "./17Form/FormTesting";
+import FormFormik from "./17Form/FormFormik";
 
 const AllComponents = () => {
   const [count, setCount] = useState("hello g");
@@ -72,9 +72,11 @@ const AllComponents = () => {
           {/* <SearchFilterReducer/> */}
           {/* <AddToCartReducer/> */}
           {/* <SortDataDividedFile/> */}
-         {/* <ParentComponent/> */}
-         {/* <FilterDataParent/> */}
-         <ToggleReducer/>
+          {/* <ParentComponent/> */}
+          {/* <FilterDataParent/> */}
+          {/* <ToggleReducer/> */}
+          {/* <FormTesting /> */}
+          <FormFormik/>
         </div>
       </counterContext.Provider>
     </>
