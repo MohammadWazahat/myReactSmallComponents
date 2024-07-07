@@ -33,6 +33,10 @@ import FilterDataParent from "./13FilterData/FilterData/FilterDataParent";
 import ToggleReducer from "./11GridAndListView/ToggleReducer";
 import FormTesting from "./17Form/FormTesting";
 import FormFormik from "./17Form/FormFormik";
+import ImageUploader from "./18imageUploader/ImageUploader";
+import ImageUrlUploader from "./18imageUploader/ImageUrlUploader";
+import FollowUnfollow from "./19FollowUnfollow/FollowUnfollow";
+import TestImageUploader from "./20TestImage/TestImageUploader";
 
 const AllComponents = () => {
   const [count, setCount] = useState("hello g");
@@ -76,7 +80,11 @@ const AllComponents = () => {
           {/* <FilterDataParent/> */}
           {/* <ToggleReducer/> */}
           {/* <FormTesting /> */}
-          <FormFormik/>
+          {/* <FormFormik/> */}
+          {/* <ImageUploader/> */}
+          {/* <ImageUrlUploader/> */}
+          {/* <FollowUnfollow/> */}
+          <TestImageUploader/>
         </div>
       </counterContext.Provider>
     </>
