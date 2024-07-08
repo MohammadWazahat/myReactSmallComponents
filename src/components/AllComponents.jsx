@@ -37,6 +37,7 @@ import ImageUploader from "./18imageUploader/ImageUploader";
 import ImageUrlUploader from "./18imageUploader/ImageUrlUploader";
 import FollowUnfollow from "./19FollowUnfollow/FollowUnfollow";
 import TestImageUploader from "./20TestImage/TestImageUploader";
+import { Counter } from "./21TestReduxTool/Counter";
 
 const AllComponents = () => {
   const [count, setCount] = useState("hello g");
@@ -84,7 +85,8 @@ const AllComponents = () => {
           {/* <ImageUploader/> */}
           {/* <ImageUrlUploader/> */}
           {/* <FollowUnfollow/> */}
-          <TestImageUploader/>
+          {/* <TestImageUploader/> */}
+          <Counter/>
         </div>
       </counterContext.Provider>
     </>
