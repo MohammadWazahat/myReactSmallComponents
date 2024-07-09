@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, nanoid } from "@reduxjs/toolkit";
 
 const initialState = {
   value: "i am initialValue of second slice",
@@ -21,13 +21,26 @@ export const secondSlice = createSlice({
       state.value = state.value + action.payload;
     },
     AddToCart: (state, action) => {
-      state.cart = [...state.cart, action.payload];
+      //  console.log(action);
+      const todo = {
+        id: nanoid(),
+        text: action.payload,
+      };
+      // console.log(todo)
+      state.cart.push(todo);
+    },
+    RemoveFromCart: (state, action) => {
+      state.cart = state.cart.filter((item) => item.id !== action.payload);
     },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { actionTypeOnesecondSlice, actionTypeTwosecondSlice, AddToCart } =
-  secondSlice.actions;
+export const {
+  actionTypeOnesecondSlice,
+  actionTypeTwosecondSlice,
+  AddToCart,
+  RemoveFromCart,
+} = secondSlice.actions;
 
 export default secondSlice.reducer;

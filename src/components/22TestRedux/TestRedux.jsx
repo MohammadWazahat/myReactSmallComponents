@@ -8,6 +8,7 @@ import {
   actionTypeOnesecondSlice,
   actionTypeTwosecondSlice,
   AddToCart,
+  RemoveFromCart,
 } from "../../redux/features/secondSlice/secondSlice";
 
 const TestRedux = () => {
@@ -23,18 +24,18 @@ const TestRedux = () => {
   const cartData = useSelector((state) => state.storeSliceTwo.cart);
   console.log(cartData);
 
-  const [text, setText] = useState({
-    textValue: "",
-  });
+  const [text, setText] = useState();
 
   const handleChange = (e) => {
     // console.log(e.target.value);
-    setText({ ...text, textValue: e.target.value });
+    // setText({ ...text, textValue: e.target.value });
+    setText(e.target.value);
   };
 
   const submitForm = (e) => {
     e.preventDefault();
-    // console.log(text)
+    dispatch(AddToCart(text));
+    // console.log(text);
   };
   return (
     <div>
@@ -61,13 +62,24 @@ const TestRedux = () => {
           placeholder="Write Todo"
           onChange={handleChange}
         />
-        <button type="submit" onClick={() => dispatch(AddToCart(text))}>
-          AddToCart
-        </button>
+        <button type="submit">AddToCart</button>
       </form>
       <div>
         {cartData.map((item, index) => {
-          return <div key={index}>{item.textValue}</div>;
+          return (
+            <div key={index}>
+              <div>{item.id}</div>
+              <div>{item.text}</div>
+              <div>
+                <button
+                  type="button"
+                  onClick={() => dispatch(RemoveFromCart(item.id))}
+                >
+                  delete
+                </button>
+              </div>
+            </div>
+          );
         })}
       </div>
     </div>
