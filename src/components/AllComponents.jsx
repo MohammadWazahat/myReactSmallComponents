@@ -38,6 +38,8 @@ import ImageUrlUploader from "./18imageUploader/ImageUrlUploader";
 import FollowUnfollow from "./19FollowUnfollow/FollowUnfollow";
 import TestImageUploader from "./20TestImage/TestImageUploader";
 import TestRedux from "./22TestRedux/TestRedux";
+import ReactBootComp1 from "./23ReactBootstrap/ReactBootComp1";
+import RtkHome from "./24TestRtkQuery/RtkHome";
 
 const AllComponents = () => {
   const [count, setCount] = useState("hello g");
@@ -86,7 +88,9 @@ const AllComponents = () => {
           {/* <ImageUrlUploader/> */}
           {/* <FollowUnfollow/> */}
           {/* <TestImageUploader/> */}          
-          <TestRedux/>
+          {/* <TestRedux/> */}
+          {/* <ReactBootComp1/> */}
+          <RtkHome/>
         </div>
       </counterContext.Provider>
     </>
